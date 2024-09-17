@@ -1,0 +1,150 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+    color: #333333; 
+}
+
+header, footer {
+    background-color: #333333; 
+    color: #f0f0f0; 
+    text-align: center;
+    padding: 20px 0;
+}
+
+.container {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h1, h2 {
+    margin: 0 0 20px;
+}
+
+.question {
+    margin-bottom: 20px;
+}
+
+.question h3 {
+    margin-bottom: 10px;
+}
+
+.options {
+    margin: 10px 0;
+}
+
+.options label {
+    display: block;
+    margin: 5px 0;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.options input[type="radio"] {
+    display: none;
+}
+
+.options input[type="radio"]:checked + label {
+    background-color: #e0e0e0; 
+}
+
+.hidden {
+    display: none;
+}
+
+.result {
+    display: none;
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.result.correct {
+    background-color: #d4edda;
+    color: #155724;
+}
+
+.result.wrong {
+    background-color: #f8d7da;
+    color: #721c24;
+}
+
+input[type="submit"] {
+    background-color: #1F1F1D;
+    border: none;
+    color: #ffffff;
+    padding: 15px 30px;
+    text-decoration: none;
+    margin: 4px 2px;
+    cursor: pointer;
+    width: 90%;
+    border-radius: 5px;
+}
+
+.quiz-button {
+    position: absolute;
+    right: 20px;
+    top: 28px;
+    background-color: #1F1F1D; 
+    color: #FFFFFF;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.quiz-button:hover {
+    background-color: #504741; 
+}
+
+.submit-button  {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #1F1F1D;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: background-color 0.3s ease;
+}
+
+.submit-button:hover {
+    background-color: #504741; 
+}
+
+.score {
+    display: none;
+    padding: 20px;
+    margin-top: 20px;
+    background-color: #d1ecf1;
+    color: #0c5460;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.logo a{
+    position: absolute;
+    left: 12px; 
+    top: 28px;
+    height: 25px; 
+    color: #bfbfbf;
+    font-style: oblique;
+    border: 1px solid #bfbfbf;
+    border-radius: 80px;
+    padding: 5px 5px 5px 5px;
+    text-decoration: none;
+}
