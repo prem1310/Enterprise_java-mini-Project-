@@ -154,7 +154,7 @@
                 <option value="Arithmetic Aptitude">Arithmetic Aptitude</option>
                 <option value="Nonverbal Reasoning">Nonverbal Reasoning</option>
                 <option value="Civil Engineering">Civil Engineering</option>
-                <option value="Computer Science">Computer Science</option>
+                <option value="General Knowledge">General Knowledge</option>
                 <option value="Database">Database</option>
             </select>
 
