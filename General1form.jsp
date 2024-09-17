@@ -91,8 +91,175 @@
             <input type="hidden" id="remainingTime" name="timetaken" value="">
             <input type="hidden" name="easy" value="Easy">  <!-- change the name and value-->
             <input type="hidden" name="testtype" value="General Knowledge">  <!-- change the name and value-->
-            
-            
+            <div class="question">
+                <h3>1] Who was the first President of the United States?</h3>
+                <div class="options">
+                    <input type="radio" id="q1a" name="q1" value="a">
+                    <label for="q1a">George Washington</label>
+                    <input type="radio" id="q1b" name="q1" value="b">
+                    <label for="q1b">Thomas Jefferson</label>
+                    <input type="radio" id="q1c" name="q1" value="c">
+                    <label for="q1c">Abraham Lincoln</label>
+                    <input type="radio" id="q1d" name="q1" value="d">
+                    <label for="q1d">John Adams</label>
+                    <div class="hidden" data-answer="a"></div>
+                    <div class="description hidden" style="color:#ff3333">Correct answer: George Washington. He was the first President of the United States from 1789 to 1797.</div>
+                    <div class="result" id="result-q1"></div>
+                </div>
+            </div>
+
+            <div class="question">
+                <h3>2] What is the capital city of France?</h3>
+                <div class="options">
+                    <input type="radio" id="q2a" name="q2" value="a">
+                    <label for="q2a">Berlin</label>
+                    <input type="radio" id="q2b" name="q2" value="b">
+                    <label for="q2b">Madrid</label>
+                    <input type="radio" id="q2c" name="q2" value="c">
+                    <label for="q2c">Paris</label>
+                    <input type="radio" id="q2d" name="q2" value="d">
+                    <label for="q2d">Rome</label>
+                    <div class="hidden" data-answer="c"></div>
+                    <div class="description hidden" style="color:#ff3333">Correct answer: Paris. It is the capital and largest city of France.</div>
+                    <div class="result" id="result-q2"></div>
+                </div>
+            </div>
+
+            <div class="question">
+                <h3>3] Which planet is known as the 'Red Planet'?</h3>
+                <div class="options">
+                    <input type="radio" id="q3a" name="q3" value="a">
+                    <label for="q3a">Mars</label>
+                    <input type="radio" id="q3b" name="q3" value="b">
+                    <label for="q3b">Venus</label>
+                    <input type="radio" id="q3c" name="q3" value="c">
+                    <label for="q3c">Jupiter</label>
+                    <input type="radio" id="q3d" name="q3" value="d">
+                    <label for="q3d">Saturn</label>
+                    <div class="hidden" data-answer="a"></div>
+                    <div class="description hidden" style="color:#ff3333">Correct answer: Mars. Mars is often called the Red Planet because of its reddish appearance.</div>
+                    <div class="result" id="result-q3"></div>
+                </div>
+            </div>
+
+            <div class="question">
+                <h3>4] What is the largest ocean in the world?</h3>
+                <div class="options">
+                    <input type="radio" id="q4a" name="q4" value="a">
+                    <label for="q4a">Atlantic Ocean</label>
+                    <input type="radio" id="q4b" name="q4" value="b">
+                    <label for="q4b">Indian Ocean</label>
+                    <input type="radio" id="q4c" name="q4" value="c">
+                    <label for="q4c">Pacific Ocean</label>
+                    <input type="radio" id="q4d" name="q4" value="d">
+                    <label for="q4d">Arctic Ocean</label>
+                    <div class="hidden" data-answer="c"></div>
+                    <div class="description hidden" style="color:#ff3333">Correct answer: Pacific Ocean. It is the largest and deepest ocean on Earth.</div>
+                    <div class="result" id="result-q4"></div>
+                </div>
+            </div>
+
+            <div class="question">
+                <h3>5] Who wrote the play 'Romeo and Juliet'?</h3>
+                <div class="options">
+                    <input type="radio" id="q5a" name="q5" value="a">
+                    <label for="q5a">Charles Dickens</label>
+                    <input type="radio" id="q5b" name="q5" value="b">
+                    <label for="q5b">J.K. Rowling</label>
+                    <input type="radio" id="q5c" name="q5" value="c">
+                    <label for="q5c">William Shakespeare</label>
+                    <input type="radio" id="q5d" name="q5" value="d">
+                    <label for="q5d">George Orwell</label>
+                    <div class="hidden" data-answer="c"></div>
+                    <div class="description hidden" style="color:#ff3333">Correct answer: William Shakespeare. He wrote 'Romeo and Juliet' in the late 16th century.</div>
+                    <div class="result" id="result-q5"></div>
+                </div>
+            </div>
+
+            <div class="question">
+                <h3>6] Which element has the chemical symbol 'O'?</h3>
+                <div class="options">
+                    <input type="radio" id="q6a" name="q6" value="a">
+                    <label for="q6a">Oxygen</label>
+                    <input type="radio" id="q6b" name="q6" value="b">
+                    <label for="q6b">Osmium</label>
+                    <input type="radio" id="q6c" name="q6" value="c">
+                    <label for="q6c">Oganesson</label>
+                    <input type="radio" id="q6d" name="q6" value="d">
+                    <label for="q6d">Oxide</label>
+                    <div class="hidden" data-answer="a"></div>
+                    <div class="description hidden" style="color:#ff3333">Correct answer: Oxygen. It is a colorless, odorless gas essential for life on Earth.</div>
+                    <div class="result" id="result-q6"></div>
+                </div>
+            </div>
+
+            <div class="question">
+                <h3>7] How many continents are there in the world?</h3>
+                <div class="options">
+                    <input type="radio" id="q7a" name="q7" value="a">
+                    <label for="q7a">Five</label>
+                    <input type="radio" id="q7b" name="q7" value="b">
+                    <label for="q7b">Six</label>
+                    <input type="radio" id="q7c" name="q7" value="c">
+                    <label for="q7c">Seven</label>
+                    <input type="radio" id="q7d" name="q7" value="d">
+                    <label for="q7d">Eight</label>
+                    <div class="hidden" data-answer="c"></div>
+                    <div class="description hidden" style="color:#ff3333">Correct answer: Seven. The seven continents are Africa, Antarctica, Asia, Europe, North America, Australia, and South America.</div>
+                    <div class="result" id="result-q7"></div>
+                </div>
+            </div>
+
+            <div class="question">
+                <h3>8] Who invented the light bulb?</h3>
+                <div class="options">
+                    <input type="radio" id="q8a" name="q8" value="a">
+                    <label for="q8a">Alexander Graham Bell</label>
+                    <input type="radio" id="q8b" name="q8" value="b">
+                    <label for="q8b">Thomas Edison</label>
+                    <input type="radio" id="q8c" name="q8" value="c">
+                    <label for="q8c">Nikola Tesla</label>
+                    <input type="radio" id="q8d" name="q8" value="d">
+                    <label for="q8d">Isaac Newton</label>
+                    <div class="hidden" data-answer="b"></div>
+                    <div class="description hidden" style="color:#ff3333">Correct answer: Thomas Edison. He is credited with inventing the first practical incandescent light bulb in 1879.</div>
+                    <div class="result" id="result-q8"></div>
+                </div>
+            </div>
+
+            <div class="question">
+                <h3>9] What is the tallest mountain in the world?</h3>
+                <div class="options">
+                    <input type="radio" id="q9a" name="q9" value="a">
+                    <label for="q9a">Mount Everest</label>
+                    <input type="radio" id="q9b" name="q9" value="b">
+                    <label for="q9b">K2</label>
+                    <input type="radio" id="q9c" name="q9" value="c">
+                    <label for="q9c">Kangchenjunga</label>
+                    <input type="radio" id="q9d" name="q9" value="d">
+                    <label for="q9d">Mount Kilimanjaro</label>
+                    <div class="hidden" data-answer="a"></div>
+                    <div class="description hidden" style="color:#ff3333">Correct answer: Mount Everest. It is the tallest mountain on Earth, with a peak at 8,848.86 meters above sea level.</div>
+                    <div class="result" id="result-q9"></div>
+                </div>
+            </div>
+
+            <div class="question">
+                <h3>10] Which country is home to the kangaroo?</h3>
+                <div class="options">
+                    <input type="radio" id="q10a" name="q10" value="a">
+                    <label for="q10a">Australia</label>
+                    <input type="radio" id="q10b" name="q10" value="b">
+                    <label for="q10b">New Zealand</label>
+                    <input type="radio" id="q10c" name="q10" value="c">
+                    <label for="q10c">South Africa</label>
+                    <input type="radio" id="q10d" name="q10" value="d">
+                    <label for="q10d">India</label>
+                    <div class="hidden" data-answer="a"></div>
+                    <div class="description hidden" style="color:#ff3333">Correct answer: Australia. Kangaroos are native to Australia and are one of the most iconic animals of the continent.</div>
+                    <div class="result" id="result-q10"></div>
+                </div>
+            </div>            
 
             <button type="button" class="submit-button" onclick="checkAnswers()">Submit</button>
             <div class="score" id="score"></div>
