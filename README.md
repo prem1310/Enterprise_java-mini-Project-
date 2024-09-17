@@ -6,7 +6,7 @@ Login & Registration Page look like:
 ![image](https://github.com/user-attachments/assets/9df016c5-a242-49f4-a582-fe3c85e15a67)
 ![image](https://github.com/user-attachments/assets/a8bc0fff-112f-428a-9325-88bdeb3bacd5)
 Home Page look like:
-![image](https://github.com/user-attachments/assets/37c4233c-9725-4183-801d-a193aa95efa1)
+![image](https://github.com/user-attachments/assets/2b56646e-1497-426e-8368-19e617f00811)
 ![image](https://github.com/user-attachments/assets/7a2eb572-52b1-4ac6-9235-23753469c3ca)
 How The aptitude test (Easy) look like:
 ![image](https://github.com/user-attachments/assets/e454d0bb-330a-41e2-938c-65344dcea9b2)
