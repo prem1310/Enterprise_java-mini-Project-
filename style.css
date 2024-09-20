@@ -2,8 +2,12 @@ body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f0f0f0;
-    color: #333333; 
+    background-image: url('C:\Users\prem vishwakarma\OneDrive\문서\NetBeansProjects\EJHomePage\web\img1.png');
+    background-size: cover; 
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 150vh;
+    color: #333333;
 }
 
 header, footer {
