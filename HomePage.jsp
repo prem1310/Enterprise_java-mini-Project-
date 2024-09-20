@@ -86,11 +86,11 @@
 
         <div class="sec" >
             <h2>Database</h2>
-                <button class="diff-butt e-butt" ><a href="#">Easy</a></button>
+                <button class="diff-butt e-butt" ><a href="Database1form.jsp">Easy</a></button>
             
-                <button class="diff-butt i-butt" ><a href="#">Intermediate</a></button>
+                <button class="diff-butt i-butt" ><a href="Database2form.jsp">Intermediate</a></button>
             
-                <button class="diff-butt h-butt" ><a href="#">Hard</a></button>
+                <button class="diff-butt h-butt" ><a href="Database3form.jsp">Hard</a></button>
         </div>
     </section>
     <footer>
