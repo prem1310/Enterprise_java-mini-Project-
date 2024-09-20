@@ -16,8 +16,13 @@
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f0f0f0; /* Light background color */
-            color: #333333; /* Dark text color */
+            background-color: #f0f0f0; 
+            color: #333333; 
+            background-image: url('img1.png');
+            background-size: cover; 
+            background-repeat: no-repeat;
+            background-position: center;
+            height: 150vh;
         }
         header h1 {
             background-color: #333333;
@@ -120,13 +125,101 @@
         }
         
         footer {
-            position: relative;
-            top: 326px;
             background-color: #333333; 
-            color: #FFFFFF;
+            color: white;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr); 
+            padding: 50px;
+            gap: 30px;
             text-align: center;
-            padding: 20px 0;
-            margin-top: 20px;
+        }
+
+        footer ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        footer ul li {
+            margin: 10px 0;
+            font-size: 16px;
+        }
+
+        .bold {
+            font-weight: bold;
+            font-size: 18px;
+            color: white;
+            margin-bottom: 15px;
+        }
+
+        footer ul li a {
+            color: rgb(189, 182, 182);
+            text-decoration: none;
+        }
+
+        footer ul li a:hover {
+            color: white;
+            text-decoration: underline;
+        }
+
+        .container7 {
+            margin-top: 30px;
+            color: white;
+            text-align: center;
+            background-color: #333333;
+            padding: 20px;
+        }
+
+        .container7 ul{
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        
+        .container7 input[type="email"] {
+            width: 300px;
+            padding: 10px;
+            border: 1px solid greenyellow;
+            border-radius: 5px;
+            margin-right: 10px;
+        }
+
+        .container7 input[type="submit"] {
+            padding: 10px 20px;
+            background-color: orange;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .container7 input[type="submit"]:hover {
+            background-color: darkorange;
+        }
+
+        .container7 hr {
+            border: 0;
+            height: 1px;
+            background: white;
+            margin: 20px auto;
+            width: 80%;
+        }
+
+        @media (max-width: 768px) {
+            footer {
+                grid-template-columns: 1fr; 
+            }
+        }
+
+        .container7 p {
+            font-size: 18px;
+            color: white;
+        }
+
+        @media (max-width: 500px) {
+            .container7 input[type="email"] {
+                width: 100%;
+                margin-bottom: 10px;
+            }
         }
     </style>
 </head>
@@ -169,11 +262,7 @@
             <button type="submit">Submit</button>
         </form>
     </main>
-
-    <footer>
-        <p>&copy; 2024 EJ team. All rights reserved.</p>
-    </footer>
-   <% 
+    <% 
             session = request.getSession();
             String username = (String) session.getAttribute("username");
             String ttype = request.getParameter("test-type");
@@ -188,7 +277,7 @@
                     ps.setString(2,tlevel);
                     ps.setString(3,ttype);
                     ResultSet rs = ps.executeQuery();
-                    out.print("<center><table border='1' width='95%' style='text-align:center'");
+                    out.print("<br><center><table border='1' width='95%' style='text-align:center'");
                     out.print("<tr>");
                         out.print("<th>Username</th>");
                         out.print("<th>Answers</th>");
@@ -209,7 +298,7 @@
                             out.print("<td>"+rs.getNString(7)+"</td>");
                         out.print("</tr>");
                     }
-                    out.print("</table></center>");
+                    out.print("</table></center><br><br>");
                 }
                 catch(Exception e){
                     out.print("<center><h3> Error: "+e+"</h3></center>");
@@ -217,6 +306,70 @@
             }
             else{}
         %>
-    
+    <center>
+	<div class="container7">
+            <ul>
+                <li class="bold">Newsletter</li>
+                <li>
+                    <input type="email" id="email" name="email" placeholder="Email Address">
+                    <input type="submit" id="submit" value="Subscribe">
+                </li>
+                <li></li>
+            </ul><br><br>
+	    <hr>
+	    <p align="center">Categories</p>
+            <hr>
+        </div>
+    <footer>
+        <div class="container1">
+            <ul>
+                <li class="bold">Verbal Reasoning</li>
+                <li><a href="Verbal1form.jsp">Easy</a></li>
+                <li><a href="Verbal2form.jsp">Intermediate</a></li>
+                <li><a href="Verbal3form.jsp">Hard</a></li>
+            </ul>
+        </div>
+        <div class="container2">
+            <ul>
+                <li class="bold">Arithmetic Aptitude</li>
+                <li><a href="Arithmetic1form.jsp">Easy</a></li>
+                <li><a href="Arithmetic2form.jsp">Intermediate</a></li>
+                <li><a href="Arithmetic3form.jsp">Hard</a></li>
+            </ul>
+        </div>
+        <div class="container3">
+            <ul>
+                <li class="bold">Non Verbal Reasoning</li>
+                <li><a href="NonVerbal1form.jsp">Easy</a></li>
+                <li><a href="NonVerbal2form.jsp">Intermediate</a></li>
+                <li><a href="NonVerbal3form.jsp">Hard</a></li>
+            </ul>
+        </div>
+	<div class="container4">
+            <ul>
+                <li class="bold">Civil Engineering</li>
+                <li><a href="Civil1form.jsp">Easy</a></li>
+                <li><a href="Civil2form.jsp">Intermediate</a></li>
+                <li><a href="Civil3form.jsp">Hard</a></li>
+            </ul>
+        </div>
+        <div class="container5">
+            <ul>
+                <li class="bold">General Knowledge</li>
+                <li><a href="General1form.jsp">Easy</a></li>
+                <li><a href="General2form.jsp">Intermediate</a></li>
+                <li><a href="General3form.jsp">Hard</a></li>
+            </ul>
+        </div>
+        <div class="container6">
+            <ul>
+                <li class="bold">Database</li>
+                <li><a href="Database1form.jsp">Easy</a></li>
+                <li><a href="Database2form.jsp">Intermediate</a></li>
+                <li><a href="Database3form.jsp">Hard</a></li>
+            </ul>
+        </div>
+    </footer>
+    </center>
 </body>
 </html>
